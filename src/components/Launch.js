@@ -6,12 +6,12 @@ import Col from 'react-bootstrap/Col';
 import Timer from './Timer';
 import { format } from 'date-fns';
 
-const Launch = ({name, company, location, image, deadline}) => {
+const Launch = ({name, company, location, image, deadline, status}) => {
     // const date = (deadline) => {
     //     return format(deadline, 'yyyy/MM/dd kk:mm:ss');
     // }
     return (
-        <Container className=' bg-navy light-gray ma2 bw2 shadow-5 w-800'>
+        <Container className=' bg-navy light-gray ma3 bw2 shadow-5 w-800 br4 pa3'>
             <Row className='flex items-center'>
                 <Col className=''>
                     <img className='' alt='#' src={image} />
@@ -25,8 +25,10 @@ const Launch = ({name, company, location, image, deadline}) => {
                             <Timer deadline={deadline}/>
                             <h5>{format(Date.parse(deadline), 'dd/MM/yyyy, kk:mm:ss')}</h5>
                         </div>
-                        <div className='flex justify-center'>
-                            <a href='google.com' className='pa3 mr2'>
+                        <div className='flex flex-column justify-center'>
+                            <p>STATUS</p>
+                            <p className='f4'>{status}</p>
+                            {/* <a href='google.com' className='pa3 mr2'>
                                 <p>WATCH</p>
                             </a>
                             <a href='google.com' className='pa3 mr2'>
@@ -34,7 +36,7 @@ const Launch = ({name, company, location, image, deadline}) => {
                             </a>
                             <a href='google.com' className='pa3 mr2'>
                                 <p>SHARE</p>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </Col>

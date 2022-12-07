@@ -37,11 +37,14 @@ class App extends Component {
       return launch.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
     })
     return (
-      <div>
+      <div className='bg-light-gray'>
         <NavBar />
-        <h1>Upcoming Launches</h1>
-        <SearchBox searchChange={this.onSearchChange}/>
-        <LaunchList launches={filteredLaunches}/>
+        <div className='flex flex-column items-center'>
+          <h1 className='f1'>Upcoming Launches</h1>
+          <SearchBox searchChange={this.onSearchChange}/>
+          <LaunchList launches={filteredLaunches}/>
+        </div>
+        
       </div>
     );
   }

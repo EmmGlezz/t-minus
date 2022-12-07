@@ -14,6 +14,7 @@ const LaunchList = ({ launches }) => {
                     location={launch.pad.location.name}
                     image={launch.image}
                     deadline={launch.net}
+                    status={launch.status.name}
                     />)
                 })
             }
