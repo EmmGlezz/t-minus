@@ -4,7 +4,6 @@ import LaunchList from '../components/LaunchList';
 import NavBar from '../components/NavBar';
 import SearchBox from '../components/SearchBox';
 
-// import Obj from './devtest.json';
 
 
 class App extends Component {
