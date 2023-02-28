@@ -1,0 +1,40 @@
+.cover {
+    height: 100vh;
+    background-image: url('/docs/images/spacex-OHOU-5UVIYQ.jpg');
+    
+}
+
+.layer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(20, 26, 38, 0.2);
+    height: 100%;
+    width: 100%;
+    font-family: Quantico;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.layer button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(20, 26, 38);
+    width: 20%;
+    height: 60px;
+    padding: 16px 24px;
+    border: 1px solid rgb(20, 26, 38);
+    border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.layer .title {
+    font-weight: 700;
+    font-style: italic;
+}

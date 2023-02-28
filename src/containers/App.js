@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import LaunchList from '../components/LaunchList';
-import NavBar from '../components/NavBar';
+import NavBar from '../components/NavBar/NavBar';
 import SearchBox from '../components/SearchBox';
+import Cover from '../components/Cover/Cover';
 
 
 
@@ -35,6 +36,7 @@ const App = () => {
     return (
       <div className='bg-light-gray'>
         <NavBar />
+        <Cover />
         <div className='flex flex-column items-center'>
           <h1 className='f1'>Upcoming Launches</h1>
           <SearchBox searchChange={onSearchChange}/>
