@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import LaunchList from '../components/LaunchList';
 import NavBar from '../components/NavBar';
@@ -6,47 +6,50 @@ import SearchBox from '../components/SearchBox';
 
 
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      launches: [],
-      searchfield: ''
-    }
-  }
+const App = () => {
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     launches: [],
+  //     searchfield: ''
+  //   }
+  // }
+  const [launches, setLaunches] = useState([])
+  const [searchField, setsearchField] = useState('')
 
-  componentDidMount() {
-    fetch('https://lldev.thespacedevs.com/2.2.0/launch/upcoming').then(response => {
+  useEffect(() => {
+    fetch('https://lldev.thespacedevs.com/2.2.0/launch/upcoming')
+    .then(response => {
       return response.json();
     }).then(launchCount => {
-      this.setState({launches: launchCount.results})
+      setLaunches(launchCount.results)
     });
-  }
+  }, [])
+  
 
   
   
-  onSearchChange = (event) => {
-    this.setState({ searchfield: event.target.value})
+  const onSearchChange = (event) => {
+    setsearchField(event.target.value)
     
   }
 
 
-  render() {
-    const filteredLaunches = this.state.launches.filter(launch => {
-      return launch.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
-    })
+  const filteredLaunches = launches.filter(launch => {
+    return launch.name.toLowerCase().includes(searchField.toLowerCase());
+  })
+
     return (
       <div className='bg-light-gray'>
         <NavBar />
         <div className='flex flex-column items-center'>
           <h1 className='f1'>Upcoming Launches</h1>
-          <SearchBox searchChange={this.onSearchChange}/>
+          <SearchBox searchChange={onSearchChange}/>
           <LaunchList launches={filteredLaunches}/>
         </div>
         
       </div>
     );
-  }
   
 }
 
