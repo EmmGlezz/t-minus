@@ -7,13 +7,6 @@ import SearchBox from '../components/SearchBox';
 
 
 const App = () => {
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     launches: [],
-  //     searchfield: ''
-  //   }
-  // }
   const [launches, setLaunches] = useState([])
   const [searchField, setsearchField] = useState('')
 
