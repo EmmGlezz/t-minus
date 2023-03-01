@@ -83,6 +83,7 @@ const About = () => {
             </div>
         </Col>
       </Row>
+      
     </Container>
     // <div className='about'>
     //     <div>

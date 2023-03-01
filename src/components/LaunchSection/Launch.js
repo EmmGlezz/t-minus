@@ -11,13 +11,14 @@ const Launch = ({name, company, location, image, deadline, status}) => {
     //     return format(deadline, 'yyyy/MM/dd kk:mm:ss');
     // }
     return (
-        <Container className='bg-navy light-gray ma3 bw2 shadow-5 w-800 br4 pa3'>
-            <Row className='flex items-center'>
-                <Col className=''>
-                    <img className='' alt='#' src={image} />
+        <Container className='launch light-gray  bw2 shadow-5 br4 pa3'>
+            
+            <Row className=''>
+                <Col className='col-md-4'>
+                    <img className='object-fit-cover rounded' alt='#' src={image} height='100%' width='100%'/>
                 </Col>
-                <Col>
-                    <div className='tc items-center'>
+                <Col className='col-md-8'>
+                    <div className='tc items-center launch-text'>
                         <h1>{name}</h1>
                         <p>{company}</p>
                         <p>{location}</p>

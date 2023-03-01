@@ -1,0 +1,8 @@
+.launchSection {
+    /* background-color: white; */
+    font-family: Quantico;
+}
+
+.launchSection .launch-section-title {
+    color: rgb(20, 26, 38);
+}

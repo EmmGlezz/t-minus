@@ -13,6 +13,7 @@ const App = () => {
         <NavBar />
         <Cover />
         <About />
+        <div className='separator'></div>
         <LaunchSection />
       </div>
     );

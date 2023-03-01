@@ -30,8 +30,9 @@ const LaunchSection = () => {
     return launch.name.toLowerCase().includes(searchField.toLowerCase());
   })
   return (
-    <div className='flex flex-column items-center'>
-        <h1 className='f1'>Upcoming Launches</h1>
+    <div className='flex flex-column items-center launchSection'>
+      
+        <h1 className='f1 launch-section-title'>Upcoming Launches</h1>
         <SearchBox searchChange={onSearchChange}/>
         <LaunchList launches={filteredLaunches}/>
     </div>

@@ -44,9 +44,6 @@ const NavBar = () => {
                         </a>
                     </Nav.Link>
                     </Nav.Item>
-                    <Nav.Item>
-                    <Nav.Link href="/">CONTACT</Nav.Link>
-                    </Nav.Item>
                 </Nav>
             </Container>
           </Navbar>
