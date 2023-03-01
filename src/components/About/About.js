@@ -66,19 +66,16 @@ const About = () => {
                     </div>
                     <div className="col-lg-6 mt-4 pt-2">
                         <div className="media align-items-center rounded shadow p-3">
-                            <i className="fa fa-file-download h4 mb-0 text-custom"></i>
                             <h6 className="ml-3 mb-0 text-light">Launch status</h6>
                         </div>
                     </div>
                     <div className="col-lg-6 mt-4 pt-2">
                         <div className="media align-items-center rounded shadow p-3">
-                            <i className="fa fa-user h4 mb-0 text-custom"></i>
                             <h6 className="ml-3 mb-0 text-light">Rocket details</h6>
                         </div>
                     </div>
                     <div className="col-lg-6 mt-4 pt-2">
                         <div className="media align-items-center rounded shadow p-3">
-                            <i className="fa fa-image h4 mb-0 text-custom"></i>
                             <h6 className="ml-3 mb-0 text-light">Countdown timer</h6>
                         </div>
                     </div>

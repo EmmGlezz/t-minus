@@ -3,7 +3,7 @@ import './Launch.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Timer from './Timer';
+import Timer from './Timer/Timer';
 import { format } from 'date-fns';
 
 const Launch = ({name, company, location, image, deadline, status}) => {
@@ -11,7 +11,7 @@ const Launch = ({name, company, location, image, deadline, status}) => {
     //     return format(deadline, 'yyyy/MM/dd kk:mm:ss');
     // }
     return (
-        <Container className=' bg-navy light-gray ma3 bw2 shadow-5 w-800 br4 pa3'>
+        <Container className='bg-navy light-gray ma3 bw2 shadow-5 w-800 br4 pa3'>
             <Row className='flex items-center'>
                 <Col className=''>
                     <img className='' alt='#' src={image} />
