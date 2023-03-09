@@ -11,20 +11,20 @@ const Launch = ({name, company, location, image, deadline, status}) => {
     //     return format(deadline, 'yyyy/MM/dd kk:mm:ss');
     // }
     return (
-        <Container className='launch light-gray  bw2 shadow-5 br4 pa3'>
+        <Container className='launch light-gray bw2 shadow-5 br4 pa3 h-100 d-flex '>
             
             <Row className=''>
-                <Col className='col-md-4'>
-                    <img className='object-fit-cover rounded' alt='#' src={image} height='100%' width='100%'/>
+                <Col className='col-12 h-50'>
+                    <img className=' rounded' alt='#' src={image} height='100%' width='100%'/>
                 </Col>
-                <Col className='col-md-8'>
+                <Col className='col-12 '>
                     <div className='tc items-center launch-text'>
                         <h1>{name}</h1>
                         <p>{company}</p>
                         <p>{location}</p>
                         <div>
                             <Timer deadline={deadline}/>
-                            <h5>{format(Date.parse(deadline), 'dd/MM/yyyy, kk:mm:ss')}</h5>
+                            <h5 className='mt-4'>{format(Date.parse(deadline), 'dd/MM/yyyy, kk:mm:ss')}</h5>
                         </div>
                         <div className='flex flex-column justify-center'>
                             <p>STATUS</p>

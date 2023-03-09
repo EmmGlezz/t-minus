@@ -11,7 +11,7 @@ const LaunchList = ({ launches }) => {
             {/* <Launch name={launches.results[0].name} company={launches.results[0].launch_service_provider.name} location={launches.results[0].pad.location.name}/> */}
             {
                 launches.map((launch, i) => {
-                    return (<Col className='col-6' style={{height: '600px'}}>
+                    return (<Col className='col-12 col-lg-6 my-4' style={{minHeight: '1000px'}}>
                     <Launch
                     key={i}
                     name={launch.name}
