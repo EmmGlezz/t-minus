@@ -1,7 +1,7 @@
-.navbar {
+.navbar-config {
     background-color: transparent;
     color: white !important;
-    height: 80px;
+    /* height: 80px; */
     font-family: Quantico;
     transition: 1s ease;
 }
@@ -10,11 +10,11 @@
     background-color: rgb(20, 26, 38);
     transition: 1s ease;
     color: white !important;
-    height: 80px;
+    /* height: 80px; */
     font-family: Quantico;
 }
 
-.navbar.active {
+.navbar-config.active {
     background-color: #17191E;
     transition: 0.1s;
     color: white;
