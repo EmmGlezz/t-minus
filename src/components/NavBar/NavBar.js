@@ -1,6 +1,5 @@
 import React, {useState, useRef, useEffect} from 'react'
 import './NavBar.css';
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { IoMdMenu, IoMdClose } from 'react-icons/io'
@@ -34,7 +33,7 @@ const NavBar = () => {
                         <h1 className='logo-title'>T-MINUS</h1>
                     </Navbar.Brand>
                     <div className='d-md-none'>
-                      <button onClick={() => setNavbar(!navbar)}>
+                      <button className='menu-button' onClick={() => setNavbar(!navbar)}>
                           {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30}/>}
                       </button>
                     </div>

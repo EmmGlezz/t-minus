@@ -40,3 +40,9 @@
     font-size: 25px;
     font-weight: 700;
 }
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
