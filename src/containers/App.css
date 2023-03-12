@@ -41,6 +41,7 @@
 .separator {
   position: relative;
   background: rgb(20, 26, 38);
+  /* background: rgb(141, 153, 174); */
   height: 10vh;
   border-bottom-left-radius: 50% 13%;
   border-bottom-right-radius: 50% 13%;

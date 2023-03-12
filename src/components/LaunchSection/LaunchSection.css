@@ -1,8 +1,31 @@
 .launchSection {
     /* background-color: white; */
     font-family: Quantico;
+    /* background-color: rgb(20, 26, 38); */
+    background-color: rgb(141, 153, 174);
+    margin-top: -10px;
 }
 
 .launchSection .launch-section-title {
-    color: rgb(20, 26, 38);
+    color: white
+}
+
+.title_box {
+    width: 100%;
+    
+}
+
+.filter_box {
+    background-color: rgb(237, 242, 244);
+}
+
+.button_color {
+    border: none !important;
+    background-color: rgb(20, 26, 38) !important;
+}
+
+.button_views {
+    margin-top: 20px;
+    margin-bottom: -50px;
+    margin-right: 20px;
 }
