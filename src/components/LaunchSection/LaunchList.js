@@ -9,7 +9,6 @@ const LaunchList = ({ launches, isGrid }) => {
 	return (
 		<Container fluid className='launchList mt-5'>
 			<Row>
-				{/* <Launch name={launches.results[0].name} company={launches.results[0].launch_service_provider.name} location={launches.results[0].pad.location.name}/> */}
 				{launches.map((launch, i) => {
 					return isGrid ? (
 						<Col
