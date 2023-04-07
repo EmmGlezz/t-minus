@@ -12,21 +12,9 @@ import {TfiViewList} from 'react-icons/tfi';
 
 import './LaunchSection.css'
 
-const LaunchSection = () => {
-    const [launches, setLaunches] = useState([])
+const LaunchSection = ({launches}) => {
   const [searchField, setsearchField] = useState('')
   const [isGrid, setIsGrid] = useState(true)
-
-  useEffect(() => {
-    fetch('https://lldev.thespacedevs.com/2.2.0/launch/upcoming?limit=20')
-    .then(response => {
-      return response.json();
-    }).then(launchCount => {
-      setLaunches(launchCount.results)
-      console.log(launchCount)
-    });
-  }, [])
-  
 
   
   
