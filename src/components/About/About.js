@@ -16,7 +16,7 @@ const About = () => {
                   <Row className="row">
                       <Col className="col-lg-12 col-md-12 mt-4 pt-2">
                           <Card className="work-desk rounded border-0 shadow-lg overflow-hidden">
-                              <img src="/images/launch.jpg" class="img-fluid" alt="Image1" />
+                              <img src="/images/Launch.jpg" class="img-fluid" alt="Image1" />
                               <div className="img-overlay bg-dark"></div>
                           </Card>
                       </Col>
