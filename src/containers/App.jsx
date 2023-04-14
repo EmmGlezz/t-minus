@@ -13,18 +13,17 @@ const App = () => {
   const [loaded, setLoaded] = useState(false)
   const [launches, setLaunches] = useState([])
 
-  useEffect(() => {
-    fetch('https://lldev.thespacedevs.com/2.2.0/launch/upcoming?limit=20')
-    .then(response => {
-      return response.json();
-    }).then(launchCount => {
-      setLaunches(launchCount.results)
-      console.log(launchCount)
-    })
-    .then(
-      setLoaded(true)
-    );
+  useEffect(()  => {
+    getLaunches();
   }, [])
+
+  const getLaunches = async () => {
+    const response = await fetch('https://lldev.thespacedevs.com/2.2.0/launch/upcoming?limit=20');
+    const data = await response.json();
+    setLaunches(data.results);
+    console.log(data.results)
+    setLoaded(true)
+  }
 
   return !loaded ? (
     <Loading />
